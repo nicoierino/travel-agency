@@ -1,54 +1,27 @@
 .wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;
 
-  max-width: 1236px;
-  margin-left: auto;
-  margin-right: auto;
+    overflow: hidden;
 
-  /* Esto es porque las columnas terminan
-	Mas alla de los limites del wrapper
-	porque aplicamos padding. Hacemos que lo
-	que sobre no se muestre */
-  overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 
-  /* Para que los wrappers adentro de los wrappers
-	no se les aplique el padding */
-  .wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Modificadores */
-  &--medium {
-	max-width: 976px;
-  }
-
-  &--no-padding-until-medium {
-    padding-left: 0px;
-    padding-right: 0px;
-
-    @mixin atMedium {
-      padding-left: 18px;
-      padding-right: 18px;
+    &--medium {
+        max-width: 976px;
     }
-  }
 
-  &--no-padding-until-large {
-    padding-left: 0px;
-    padding-right: 0px;
-
-    @mixin atLarge {
-      padding-left: 18px;
-      padding-right: 18px;
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
     }
-  }
 
-  &--b-margin {
-	margin-bottom: 1rem;
-	
-    @mixin atSmall {
-      margin-bottom: 3.875rem;
+    &--b-margin {
+        margin-bottom: 1rem;
+
+        @mixin atSmall {
+            margin-bottom: 3.875rem;
+        }
     }
-  }
 }

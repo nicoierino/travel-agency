@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve --mode development --env development",
+    "watch": "webpack serve --mode development --env development",
     "build": "webpack serve --mode production --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "css-loader": "^4.3.0",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.1.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^4.0.4",
+    "postcss-mixins": "^6.2.2",
     "postcss-nested": "^5.0.1",
     "postcss-simple-vars": "^6.0.1",
     "style-loader": "^2.0.0",

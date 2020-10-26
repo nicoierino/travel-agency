@@ -2,6 +2,7 @@ const path = require('path')
 
 const postCSSPlugins = [
   require('postcss-import'),
+  require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('autoprefixer')
@@ -18,7 +19,7 @@ module.exports = {
       server._watch('./app/**/*.html')
     },
     contentBase: path.join(__dirname, 'app'),
-    hot: true,
+    hot: true, //Inyectar cambios sin tener que refrescar el navegador
     port: 3000,
     host: '0.0.0.0'
   },
@@ -33,12 +34,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  'postcss-import',
-                  'postcss-simple-vars',
-                  'postcss-nested',
-                  'autoprefixer',
-                ]
+                plugins: postCSSPlugins
               }
             }
           }

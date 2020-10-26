@@ -1,14 +1,18 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box; /*Para que los pixeles de los gutters formen parte del % total*/
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: .2rem;
+  max-width: 100%;
+  height: auto;
 }
+
+a {
+  color: $mainOrange;
+}
+
