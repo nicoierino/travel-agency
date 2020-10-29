@@ -1,0 +1,55 @@
+.testimonial {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 18px 1px 18px;
+    margin-top: 80px;
+    margin-bottom: 85px;
+
+    @mixin atLarge {
+        border-radius: 10px;
+        margin-bottom: 0;
+        padding: 0 1.8125rem 1px 1.8125rem;
+    }
+
+    &--last-no-b-margin {
+        margin-bottom: 0;
+    }
+
+    &__photo {
+        /*Este es el contenedor del img*/
+        overflow: hidden;
+        /*Para que la imagen no pueda sobresalir del marco*/
+        border-radius: 80px;
+        /*Le hacemos el marco redondo la mitad de la foto*/
+        /*Borde blanquito de la foto*/
+        border: 6px solid rgba(255, 255, 255, .8);
+
+
+        /*Tamano de la foto*/
+        width: 160px;
+        height: 160px;
+
+        /*Hacemos sobresalir la mitad de la foto por arriba*/
+        position: relative;
+        top: -80px;
+
+        /* acomodamos los márgenes superiores e inferiores 80px para que el texto sepa y no esté corrido  */
+        margin: 0 auto -80px auto;
+
+    }
+
+    &__title {
+        color: $mainBlue;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: $mainOrange;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        margin: .25rem 0 1rem 0;
+    }
+}
