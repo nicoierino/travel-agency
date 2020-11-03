@@ -1,0 +1,43 @@
+.primary-nav {
+    
+    &--pull-right-at-medium {
+        float: auto;
+
+        @mixin atMedium {
+            float: right;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 10px;
+        padding: 0;
+        
+        @mixin atMedium {
+            display: unset;
+        }
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        padding-top: 5px;
+        margin-bottom: .3rem;
+    }
+
+    a {
+        color: $mainBlue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 2rem;
+
+        @mixin atMedium {
+            color: white;
+            font-size: unset;
+            padding-right: 20px;
+            font-weight: 300;
+        }
+    }
+}
