@@ -38,6 +38,12 @@
             font-size: unset;
             padding-right: 20px;
             font-weight: 300;
+
+            &.is-current-link {
+                color: #fabb69;
+              }
         }
     }
 }
+
+

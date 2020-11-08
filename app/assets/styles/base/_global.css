@@ -2,6 +2,10 @@
   box-sizing: border-box; /*Para que los pixeles de los gutters formen parte del % total*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;

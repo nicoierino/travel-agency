@@ -4,7 +4,7 @@
     z-index: 2;
     /*Para que tenga un index mayor y se ponga por arriba*/
     width: 100%;
-    
+
     &--is-expanded {
         transition: all .3s ease-out;
         background-color: rgba(#ffffff, .9);
@@ -14,10 +14,16 @@
     }
 
     @mixin atMedium {
+        transition: background-color .7s;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: rgba($mainBlue, .5);
         /*Para usar esa sintaxis postcss-hexrgba*/
+        position: fixed;
+
+        &--dark {
+            background-color: rgba($darkerBlue, .75);
+        }
     }
 
     &__btn-container {
@@ -39,6 +45,15 @@
         @mixin atMedium {
             left: auto;
             transform: translatex(0);
+            transition: top .2s, transform .2s;
+
+            .site-header--dark & {
+                /*Este selector aplica para:
+                .site-header--dark .site-header__logo (atMedium) 
+                */
+                top: -17px;
+                transform: scale(.65);
+            }
         }
     }
 
