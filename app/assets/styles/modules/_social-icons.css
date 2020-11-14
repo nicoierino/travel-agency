@@ -1,0 +1,18 @@
+.social-icons {
+    text-align: center;
+    justify-content: center;
+
+    
+    a{
+        margin-top: 5px;
+        background-color: $mainOrange;
+        display: inline-block;
+        
+    }
+    img {
+        width: 70px;
+        height: 70px;
+        margin: 8px;
+        padding: 8px;
+    }
+}

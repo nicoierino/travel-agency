@@ -13,7 +13,7 @@
     }
 
     &--gutters-large {
-        margin-right: -100px;   
+        margin-right: -100px;
     }
 
 
@@ -23,12 +23,17 @@
         /*Para que los pixeles de los gutters formen parte del % total*/
     }
 
-    &--gutters-small > div{
+    &--gutters-small>div {
         padding-right: 45px;
     }
 
-    &--gutters-large > div{
+    &--gutters-large>div {
         padding-right: 100px;
+    }
+
+    &__smallest-6 {
+        float: left;
+        width: 50%;
     }
 
 
@@ -36,13 +41,22 @@
         margin-bottom: 1.4rem;
     }
 
-    @mixin atMedium {
+    @mixin atSmall {
+        &__small-3 {
+            float: left;
+            width: 25%;
+        }
+    }
 
-         
+    @mixin atMedium {
         &__b-margin-until-medium {
-             margin-bottom: 0;
-         } 
-        
+            margin-bottom: 0;
+        }
+
+        &__medium-3 {
+            float: left;
+            width: 25%;
+        }
 
         &__medium-4 {
             float: left;
@@ -69,12 +83,10 @@
     }
 
     @mixin atLarge {
-
-         
         &__b-margin-until-large {
-             margin-bottom: 0;
-         } 
-        
+            margin-bottom: 0;
+        }
+
 
         &__large-4 {
             float: left;
@@ -105,7 +117,7 @@
             display: flex;
         }
 
-        & > div {
+        &>div {
             float: none;
             display: flex;
         }
@@ -116,7 +128,7 @@
             display: flex;
         }
 
-        & > div {
+        &>div {
             float: none;
             display: flex;
         }
