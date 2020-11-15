@@ -16,6 +16,7 @@ document.querySelectorAll(".open-modal").forEach(el => {
         ev.preventDefault()
         if (typeof modal == "undefined") {
             import(/* webpackChunkName: "modal" */ "./modules/Modal")
+            // import("./modules/Modal")
                 .then((x) => {
                     modal = new x.default()
                     modal.openTheModal()
