@@ -1,11 +1,9 @@
 {
-  "name": "travel-site",
+  "name": "travel-agency",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve --mode development --env development",
-    "watch": "webpack serve --mode development --env development",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "dependencies": {
     "lazysizes": "^5.2.2",
